@@ -60,6 +60,7 @@
   @media print .video-container iframe,
   .video-container object,
   .video-container embed {
+    border-style: double;
 
   }
 

@@ -1,15 +1,48 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+
+
+
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-size: 100%;
 }
 
-body {
-  background-color: #FFE53B;
-  background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);
-  min-height: 100vh;
-  font-family: 'Fira Sans', sans-serif;
-  display: flex;
+.hero-image {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255,255,255,0.6);
+  background-blend-mode: lighten;
+  background-image: url(http://10.0.134.84:8000/images/digital.jpg);
+  background-position: center center;
+  background-size: cover;
+  color: hsl(58, 71%, 20%);
+  
 }
+
+.hero-image h1 {
+  padding-left: 5vw;
+  padding-top: 5vh;
+  font-family: Didot, Georgia, serif;
+  font-size: 72px;
+}
+
+.hero-image h2 {
+  padding-left: 5vw;
+  width: 45%;
+  font-family: Didot, Georgia, serif;
+  font-size: 30px;
+}
+
+.main {
+  padding: 2em;
+}
+
+
+
+
+
 
 .blog-slider {
   width: 95%;

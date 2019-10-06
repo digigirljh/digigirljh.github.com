@@ -13,8 +13,8 @@
   width: 100vw;
   height: 100vh;
   background-image: url(./images/digital.jpg);
-  background-color: rgba(255,255,255,0.6);
-  background-blend-mode: lighten;
+  /*background-color: rgba(255,255,255,0.6);*/
+  /*background-blend-mode: lighten;*/
   background-position: center center;
   background-size: cover;
   color: hsl(60, 3%, 6%);
@@ -26,6 +26,7 @@
   padding-top: 5vh;
   font-family: Didot, Georgia, serif;
   font-size: 72px;
+    color: white;
 }
 
 .hero-image h2 {
@@ -33,6 +34,7 @@
   width: 45%;
   font-family: Didot, Georgia, serif;
   font-size: 30px;
+    color: white;
 }
 
 .main {

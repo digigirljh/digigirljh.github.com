@@ -25,17 +25,35 @@
   padding-left: 5vw;
   padding-top: 5vh;
   font-family: Didot, Georgia, serif;
-  font-size: 72px;
+  font-size: 62px;
     color: white;
 }
 
 .hero-image h2 {
-  padding-left: 5vw;
-  width: 45%;
-  font-family: Didot, Georgia, serif;
-  font-size: 30px;
+    padding-left: 5vw;
+    width: 50%;
+    font-family: Didot, Georgia, serif;
+    font-size: 30px;
     color: white;
 }
+
+@media (max-width:450px) {
+    .hero-image h1 {
+        padding-left: 5vw;
+        padding-top: 5vh;
+        font-family: Didot, Georgia, serif;
+        font-size: 40px;
+        color: white;
+    }
+    .hero-image h2 {
+        padding-left: 5vw;
+        width: 80%;
+        font-family: Didot, Georgia, serif;
+        font-size: 20px;
+        color: white;
+    }
+}
+
 
 .main {
   padding: 2em;
@@ -59,7 +77,11 @@
   font-family: Didot, Georgia, serif;
   font-size: 18px;
 }
-
+.image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
  .video-list {
    display: flex;
@@ -98,11 +120,11 @@
   /*height: 33%;*/
   /*}*/
 
-.video-container  img {
-  display: none;
-  max-width: 100%;
-  height: auto;
-}
+/*.video-container  img {*/
+/*  display: none;*/
+/*  max-width: 100%;*/
+/*  height: auto;*/
+/*}*/
 
 .video-container  figure {
   display: none;
@@ -138,28 +160,50 @@
     height: 100vh;
   }
 
+    .video-list {
+        padding-top: 0em;
+        height: 75vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .video-container iframe {
+        display: none;
+
+        /*display: none;*/
+    }
+
   .video-container figure {
     display: block;
     width: 100%;
     /*height: 100%;*/
     overflow: hidden;
   }
-  .youtube-thumbnail {
-    /*flex-grow: 1;*/
-    z-index: 10;
-    display: block !important;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    /*height: 100%;*/
-    /*object-fit: cover;*/
-  }
+    .video-container figure img {
+        max-width:88%;
+        max-height:88%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+  /*.youtube-thumbnail {*/
+  /*  !*flex-grow: 1;*!*/
+  /*  z-index: 10;*/
+  /*  display: block !important;*/
+  /*  position: absolute;*/
+  /*  top: 0;*/
+  /*  width: 100%;*/
+  /*  !*height: 100%;*!*/
+  /*  !*object-fit: cover;*!*/
+  /*}*/
 
   .video-container figcaption {
-    padding-top: 2em;
-    text-align: center;
-    font-family: Didot, Georgia, serif;
-    font-size: 12px;
+      display: block;
+      margin-top: 1em;
+
+      text-align: center;
+      font-family: Didot, Georgia, serif;
+      font-size: 12px;
   }
 }
 

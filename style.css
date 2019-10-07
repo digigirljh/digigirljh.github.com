@@ -67,8 +67,15 @@
    flex-wrap: wrap;
  }
 .codepen-list {
+   display: flex;
+  flex-direction: column;
+   /*align-items: center;*/
 
-  align-items: center;
+
+ }
+.codepen-item {
+  padding-top: 2em;
+  padding-bottom: 2em;
 
 }
 

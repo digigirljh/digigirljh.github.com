@@ -78,9 +78,7 @@
   font-size: 18px;
 }
 .image-center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: none;
 }
 
  .video-list {
@@ -160,6 +158,11 @@
     height: 100vh;
   }
 
+    .image-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .video-list {
         padding-top: 0em;
         height: 75vh;

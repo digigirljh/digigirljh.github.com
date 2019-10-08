@@ -77,6 +77,10 @@
   font-family: Didot, Georgia, serif;
   font-size: 18px;
 }
+.qrcode-notice {
+  display: none;
+}
+
 .image-center {
     display: none;
 }
@@ -156,6 +160,9 @@
 @media print {
   .main {
     height: 100vh;
+  }
+  .qrcode-notice {
+    display:inline;
   }
 
     .image-center {
